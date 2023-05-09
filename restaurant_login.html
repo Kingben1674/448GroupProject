@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Use Case 3
+Users can register for a new account on the website
+Users can log in with saved credentials -->
+
+<html>
+<head>
+    <title>Restaurant Search</title>
+	<link rel="stylesheet" type="text/css" href="restaurant_login.css">
+	<link rel="stylesheet" type="text/css" href="RestaurantSearch.css">
+	<style>
+	body{
+		background-image: url('foodbackground.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	<!-- This is for the details of the dropdown menu -->
+	.dropbtn {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+}
+
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+  <div class = "navBar">
+        <div class = "leftElements">
+            <a href = "" id = "nonlink">
+                <h1>Foodops</h1>
+            </a>
+        </div>
+
+        <div class = "rightElements">
+            <a href="RestaurantSearch.html">
+                <img src = "Images\SearchIcon.png" alt = "Search" width = "30">
+            </a>
+
+            <a href = "log%20in%20page.html">
+                <img src = "Images\PersonIcon.png" alt = "Login" width = "30">
+            </a>
+			<a href = "RestaurantHomePage.html">
+                <img src = "Images\HomeIcon.png" alt = "Login" width = "30">
+            </a>
+        </div>
+    </div>
+  
+
+<!-- The links inside each dropdown option will take you where you need to go -->
+
+<div class="dropdown">
+	<img src="Images\profile.png" alt="Profile Icon" width="35" height="35">
+	<!-- <button class="dropbtn">Account Icon</button> -->
+	<div class="dropdown-content">
+	<a href="https://swe.umbc.edu/~danane1/is448/project/log%20in%20page.html">Account Info</a>
+	<a href="https://swe.umbc.edu/~danane1/is448/project/reservation%20list.html">Reservation List</a>
+	<a href="#">Log Out</a>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--Jordan Maddox-->
+<html>
+<head>
+	<title>Reservation Form</title>
+	<link rel = "stylesheet" type = "text/css" href = "RestaurantSearch.css">
+	<link rel = "stylesheet" type = "text/css" href = "menu_display.css">
+</head>
+	 <div class = "navBar">
+        <div class = "leftElements">
+            <a href = "" id = "nonlink">
+                <h1>Foodops</h1>
+            </a>
+        </div>
+
+        <div class = "rightElements">
+            <a href="RestaurantSearch.html">
+                <img src = "Images\SearchIcon.png" alt = "Search" width = "30">
+            </a>
+
+            <a href = "log in page.html">
+                <img src = "Images\PersonIcon.png" alt = "Login" width = "30">
+            </a>
+			<a href = "RestaurantHomePage.html">
+                <img src = "Images\HomeIcon.png" alt = "Login" width = "30">
+            </a>
+        </div>
+    </div>
+<body>
+<!-- This is the form the user will fill out to make the reservation !-->
+	<h1>Reservation Form</h1>
+	<div class = "actionPage">
+	<form>
+	<!-- This is just an example form that will be expanded upon later !-->
+		<label for="restaurant">Restaurant:</label> 
+		<p> Example Restaurant </p>
+		<label for="party_name">Party Name:</label>
+		<input type="text" id="party_name" name="party_name">
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date">
+		<label for="party_size">Party Size:</label>
+		<input type="number" id="party_size" name="party_size" min="1" max="20">
+		<label for="time">Time:</label>
+		<select id="time" name="time">
+			<option value="12:00 PM">12:00 PM</option>
+			<option value="1:00 PM">1:00 PM</option>
+			<option value="2:00 PM">2:00 PM</option>
+			<option value="6:00 PM">3:00 PM</option>
+			<option value="7:00 PM">4:00 PM</option>
+			<option value="8:00 PM">5:00 PM</option>
+		</select>
+		<input type="submit" value="Submit">
+		
+	</form>
+	<a href="confirmation_page.html">
+		<button> Next Page </button>
+		</a>
+	</div>
+</body>
+</html>

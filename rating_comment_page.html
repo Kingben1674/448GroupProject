@@ -1,0 +1,139 @@
+<!--
+Author: Peter Ngo
+Description: sets the general content of the review page.
+Dates Created: 3/15/23
+
+1. User can leave ratings/comments on different restaurants
+2. Other people can like or downvote comments and be able to reply to them
+3. Notifies the user when ratings/comments are made
+-->
+
+<!DOCTYPE html>
+<html lang = "EN">
+
+<head>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" type = "text/css" href = "RestaurantSearch.css">
+	<link rel = "stylesheet" type = "text/css" href = "ratings.css">
+	
+	<title> Ratings and Reviews </title>
+
+</head>
+<body>
+
+	<!-- Puts the Search and Account buttons on the top right corner of the screen -->
+	<div class="navBar">
+        <div class="leftElements">
+            <a href="" id="nonlink">
+                <h1>Foodops</h1>
+            </a>
+        </div>
+
+        <div class="rightElements">
+            <a href="RestaurantSearch.html">
+                <img src="Images\SearchIcon.png" alt="Search" width="30">
+            </a>
+
+            <a href="log in page.html">
+                <img src="Images\PersonIcon.png" alt="Login" width="30">
+            </a>
+			<a href="RestaurantHomePage.html">
+                <img src="Images\HomeIcon.png" alt="Login" width="30">
+            </a>
+        </div>
+
+    </div>
+
+	<h1> Restaurant Name Here </h1>
+	<h3 id = "avgStars"> Average Rating: &#11088; &#11088; &#11088; &#11088; </h3>
+	<!-- <h3 id = "avgRating"> 4.2 </h3> Unable to move it to the right of stars -->
+
+	<br>
+	<!-- Makes star rating and textbox for comments -->
+	<h1> Leave a review below! </h1>
+	<br>
+	<form>
+		<!-- this is the creation of the star buttons -->
+		<div class = "ratings">
+			<input type = "radio" id = "star1" name = "starRating" value = "1">
+			<label for = "star1"> 1 &#11088; </label>
+			
+			<input type = "radio" id = "star2" name = "starRating" value = "2">
+			<label for = "star2"> 2 &#11088; </label>
+			
+			<input type = "radio" id = "star3" name = "starRating" value = "3">
+			<label for = "star3"> 3 &#11088; </label>
+		
+			<input type = "radio" id = "star4" name = "starRating" value = "4">
+			<label for = "star4"> 4 &#11088; </label>
+			
+			<input type = "radio" id = "star5" name = "starRating" value = "5">
+			<label for = "star5"> 5 &#11088; </label>
+		</div>
+		
+		<!-- this is the creation of the comment box -->
+		<br>
+		<textarea id = "commentBox" name = "comments" placeholder = "Enter your comment here!"></textarea>
+		<br> <br>
+		<button id = "post"> Post Comment </button>
+		
+	</form>
+			
+	<!-- this will now be the start of top comments/reviews -->
+	<br> <hr>
+	<h2 id = "topRevs"> Recommended Reviews of "Restaurant Name" </h2>
+	
+	<!-- this is top comment -->
+	<img class = "userIcon" src = "Images\UserComment.png" alt = "UserIcon">
+	<p class = "userName"> User #1's Name </p>
+	<p class = "userRating"> Rating: &#11088; &#11088; &#11088; &#11088; </p>
+	<p class = "userCom"> Really enjoyed my visit to this restaurant. Our waiter Maximo was superb. 
+	His customer service was on point. We never needed or wanted for anything. 
+	The food was piping hot and succulent. The establishment was cozy. 
+	I appreciate the downtown industrial architecture and vibe. We'll definitely frequent the establishment again. </p>
+	
+	<!-- example upvote/downvote system placeholder -->
+	<div class = "vote">
+		<p> Was this review helpful? </p>
+		<button class = "like"> Like </button>
+		<button class = "dislike"> Dislike </button>
+	</div>
+	
+	<!-- comment number 2 -->
+	<br>
+	<img class = "userIcon" src = "Images\UserComment.png" alt = "UserIcon">
+	<p class = "userName"> User #2's Name </p>
+	<p class = "userRating"> Rating: &#11088; &#11088; &#11088; </p>
+	<p class = "userCom"> So stop in here for beer and a burger during the Baltimore Comic-Con. 
+	It's location is certainly convenient, so the place was loaded with all things comic book and cosplay. <br> <br>
+	I had a pretty tasty cheese burger, something I had been craving for some time. I also scored some delicious sweet potato fries.
+	All and all, this place provided a solid lunch before my journey home. <br> <br>
+
+	Of course, the biggest problem here was the service several of the bartenders seemed a bit lost, and I had to wait a bit to get their attention. </p>
+	
+	<!-- example upvote/downvote system placeholder -->
+	<div class = "vote">
+		<p> Was this review helpful? </p>
+		<button class = "like"> Like </button>
+		<button class = "dislike"> Dislike </button>
+	</div>
+	
+	
+	<!-- comment number 3 -->
+	<br>
+	<img class = "userIcon" src = "Images\UserComment.png" alt = "UserIcon">
+	<p class = "userName"> User #3's Name </p>
+	<p class = "userRating"> Rating: &#11088; </p>
+	<p class = "userCom"> Hate to leave a post like this about any place but... <br>
+	Wings were the worst I've ever had! I ordered jerk wings and they were fried to a crisp. 
+	I've had better wings at Walmart deli... On a positive note, beer was cold and delicious... </p>
+
+	<!-- example upvote/downvote system placeholder -->
+	<div class = "vote">
+		<p> Was this review helpful? </p>
+		<button class = "like"> Like </button>
+		<button class = "dislike"> Dislike </button>
+	</div>
+
+</body>
+</html>

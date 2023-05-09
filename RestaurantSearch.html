@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--Ben Raphael-->
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="RestaurantSearch.css" />
+
+    <title>Restaurant Search</title>
+
+</head>
+
+<body>
+
+     <!--Header with Website title and links to profile and search pages-->
+      <div class = "navBar">
+        <div class = "leftElements">
+            <a href = "" id = "nonlink">
+                <h1>Foodops</h1>
+            </a>
+        </div>
+
+        <div class = "rightElements">
+            <a href="RestaurantSearch.html">
+                <img src = "Images\SearchIcon.png" alt = "Search" width = "30">
+            </a>
+
+            <a href = "log in page.html">
+                <img src = "Images\PersonIcon.png" alt = "Login" width = "30">
+            </a>
+			<a href = "RestaurantHomePage.html">
+                <img src = "Images\HomeIcon.png" alt = "Login" width = "30">
+            </a>
+        </div>
+    </div>
+  
+    <!--Section for user to select filter to find restaurants they like-->
+    <div class="filters">
+        <form action="" method="post" class="formClass">
+
+            <label>
+                Restaurant Name:
+                <br />
+                <input type="text" name="restaurantName" />
+            </label>
+
+            <br />
+
+            <label>
+                Restaurant Location:
+                <br />
+                <input type="text" name="restaurantLocation" />
+            </label>
+
+            <div class="checkboxFilters">
+
+                <h4 id="filterTitles">Features:</h4>
+
+                <label>
+                    <input type="checkbox" name="checkFilters" value="24/7" />
+                    24/7
+                </label>
+
+                <br />
+                <label>
+                    <input type="checkbox" name="checkFilters" value="FastFood" />
+                    Fast Food
+                </label>
+
+                <br />
+                <label>
+                    <input type="checkbox" name="checkFilters" value="familyFriendly" />
+                    Family Friendly
+                </label>
+
+                <h4 id="filterTitles">Distance:</h4>
+
+                <label>
+                    <input type="checkbox" name="checkFilters" value="5miles" />
+                    5 Miles
+                </label>
+
+                <br />
+                <label>
+                    <input type="checkbox" name="checkFilters" value="10miles" />
+                    10 Miles
+                </label>
+
+                <br />
+                <label>
+                    <input type="checkbox" name="checkFilters" value="20miles" />
+                    20 Miles
+                </label>
+
+                <br />
+                <label>
+                    <input type="checkbox" name="checkFilters" value="50miles" />
+                    50 Miles
+                </label>
+
+            </div>
+
+            <input type="submit" value="Filter" name="submitFilter" />
+
+            <input type="submit" value="Reset Filters" name="submitResetFilter" />
+        </form>
+
+    </div>
+
+    <!--Shows restaurants that match filters-->
+    <!--Using fillers to show what it will look like-->
+    <div class="restaurantDisplay">
+
+        <div class="restaurantCard">
+
+            <div class="restaurantImage">
+			<a href ="menu_viewer.html">
+                <img src="Images/mcdonalds.jpg" id="restaurantimages" width="200" />
+			</a>
+            </div>
+
+            <div class="restaurantWords">
+                <h2 id="filterTitles">Restaurant Name</h2>
+                <p>Store hours</p>
+
+                <p>Description of Store and what they sell</p>
+            </div>
+
+        </div>
+
+        <div class="restaurantCard">
+
+            <div class="restaurantImage">
+                <img src="Images/mcdonalds.jpg" id="restaurantimages" width="200" />
+            </div>
+
+            <div class="restaurantWords">
+                <h2 id="filterTitles">Restaurant Name</h2>
+                <p>Store hours</p>
+
+                <p>Description of Store and what they sell</p>
+            </div>
+
+        </div>
+
+        <div class="restaurantCard">
+
+            <div class="restaurantImage">
+                <img src="Images/mcdonalds.jpg" id="restaurantimages" width="200" />
+            </div>
+
+            <div class="restaurantWords">
+                <h2 id="filterTitles">Restaurant Name</h2>
+                <p>Store hours</p>
+
+                <p>Description of Store and what they sell</p>
+            </div>
+
+        </div>
+
+        <div class="restaurantCard">
+
+            <div class="restaurantImage">
+                <img src="Images/mcdonalds.jpg" id="restaurantimages" width="200" />
+            </div>
+
+            <div class="restaurantWords">
+                <h2 id="filterTitles">Restaurant Name</h2>
+                <p>Store hours</p>
+
+                <p>Description of Store and what they sell</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+/*Ben Raphael*/
+
+div.leftElements{
+    width: 30%;
+    float:left;
+}
+
+div.navBar{
+    margin-top: 15px;
+    height: 60px;
+	border: 5px solid black;
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #FBEEC1;
+}
+
+div.rightElements{
+
+    float: right;
+}
+
+
+div.filters{
+    padding: 5px;
+    margin: 5px;
+    float: left;
+    width: 200px;
+    font-size: 20px;
+}
+
+div.restaurantDisplay {
+    padding: 5px;
+    border: 2px black solid;
+    border-radius: 10px;
+    float: left;
+    width: 75%;
+}
+
+div.restaurantCard{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    height: 140px;
+}
+
+div.restaurantImage{
+    padding-top: 4px;
+    width: 200px;
+    float: left;
+}
+
+div.restaurantWords {
+    float: left; 
+    margin-left: 5px;
+}
+
+#filterTitles{
+    margin: 0px;
+}
+
+h1{
+    margin: 0px;
+}
+
+#nonlink{
+    text-decoration: none;
+    color: black;
+}
+
+#restaurantimages{
+    border-radius: 5px;
+}
+
+input{
+    margin: 5px;
+}
+
+div.search{
+    border: 2px grey solid;
+    padding: 15px;
+    border-radius: 5px;
+    float: left;
+    margin: 10px;
+}
+
+div.welcomeMessage{
+    border: 2px grey solid;
+    padding: 15px;
+    border-radius: 5px;
+    float: right;
+    margin: 10px;
+}
+
+div.topPart{
+    border: 2px grey solid;
+    border-radius: 5px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.bottomPart{
+    border: 2px grey solid;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 190px;
+    background-color: lightblue;
+}
+
+div.restaurantSquareCard{
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px black solid;
+    border-radius: 5px;
+    background-color: lightgray;
+    float: left;
+}
+
+#squareCardTitles{
+    margin: 2px;
+}
+
+body {
+	background-color: #ADADAD;
+}
+
